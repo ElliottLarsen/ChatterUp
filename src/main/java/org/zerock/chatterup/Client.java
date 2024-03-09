@@ -21,13 +21,23 @@ public class Client {
             @Override
             public void run() {
                 try {
-                    // TODO: Handle exceptions.
                     OutputStream out = socket.getOutputStream();
                     byte[] buffer = message.getBytes("UTF-8");
                     out.write(buffer);
                     out.flush();
+                } catch (Exception e) {
+                    try {
+                        System.out.println("[Message send error] "
+                                + socket.getRemoteSocketAddress() + ": "
+                                + Thread.currentThread().getName());
+                        Main.clients.remove(Client.this);
+                        socket.close();
+                    } catch (Exception e2) {
+                        e2.printStackTrace();
+                    }
                 }
             }
-        }
+        };
+        Main.threadPool.submit(thread);
     }
 }
