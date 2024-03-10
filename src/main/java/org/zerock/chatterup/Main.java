@@ -55,6 +55,25 @@ public class Main extends Application {
 
     // Method to stop server.
     public void stopServer() {
+        try {
+            // Close all sockets.
+            Iterator<Client> iterator = clients.iterator();
+            while (iterator.hasNext()) {
+                Client client = iterator.next();
+                client.socket.close();
+                iterator.remove();
+            }
+            // Close the server socket object.
+            if (serverSocket != null && !serverSocket.isClosed()) {
+                serverSocket.close();
+            }
+            // Thread pool termination.
+            if (threadPool != null && !threadPool.isShutdown()) {
+                threadPool.shutdown();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // Method to create UI and starts the application.
