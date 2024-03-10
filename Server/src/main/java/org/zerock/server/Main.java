@@ -1,5 +1,4 @@
-package org.zerock.chatterup;
-
+package org.zerock.server;
 
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;

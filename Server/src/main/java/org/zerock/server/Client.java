@@ -1,4 +1,4 @@
-package org.zerock.chatterup;
+package org.zerock.server;
 
 import java.io.IOException;
 import java.io.InputStream;
