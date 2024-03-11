@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/main/java/org/zerock/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/src/main/java/org/zerock/client/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,7 @@
       <updated>1710035844230</updated>
       <workItem from="1710035845329" duration="491000" />
       <workItem from="1710121737088" duration="356000" />
+      <workItem from="1710122343045" duration="1701000" />
     </task>
     <servers />
   </component>
